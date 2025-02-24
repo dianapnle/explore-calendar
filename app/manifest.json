@@ -1,0 +1,9 @@
+{
+    "name": "Calendar App",
+    "short_name": "Calendar",
+    "description": "A simple calendar app",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }

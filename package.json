@@ -1,0 +1,43 @@
+{
+  "name": "zoho-app",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "./",
+  "proxy": "https://localhost:5000",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && rm -rf app && mv build app",
+    "server": "nodemon server.js" 
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "chalk": "^1.1.3",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "i18next": "^10.0.7",
+    "morgan": "^1.6.1",
+    "portfinder": "^1.0.25",
+    "react": "^19.0.0",
+    "react-big-calendar": "^1.17.1",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1",
+    "serve-index": "^1.9.0",
+    "watch": "^1.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}

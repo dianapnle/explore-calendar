@@ -1,0 +1,26 @@
+Apply Helvetica to everything
+.rbc-calendar {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* Increase padding on day headers */
+  .rbc-header {
+    padding: 10px 0; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Remove grey shading from out-of-month days */
+  .rbc-off-range-bg {
+    background: none !important; /* Removes background shading */
+  }
+  
+  /* Keep grey shading for the date number only */
+  .rbc-date-cell .rbc-off-range {
+    color: grey !important; /* Keeps text grey but removes shading */
+  }
+
+.rbc-toolbar-label {
+    font-weight: bold;
+    padding: 10px 0;
+}

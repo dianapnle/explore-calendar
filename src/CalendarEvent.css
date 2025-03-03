@@ -1,0 +1,17 @@
+.calendar-event {
+    pointer-events: auto !important; 
+    user-select: none; 
+    font-weight: normal;
+}
+
+
+.context-menu {
+    position: fixed !important;
+    z-index: 99999 !important; /* Ensure it appears on top */
+    display: block !important; /* Force it to show */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-weight: normal;
+}

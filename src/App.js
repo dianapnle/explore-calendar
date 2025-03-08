@@ -603,41 +603,6 @@ const eventStyleGetter = (event, start, end, isSelected) => {
 
 
 
-//   return (
-//     <div className="Calendar">
-//         <Calendar
-//             localizer={localizer}
-//             defaultDate={new Date()}
-//             defaultView="month"
-//             events={events}
-//             style={{ height: "100vh" }}
-//             onNavigate={(date) => {
-//               setCurrentDate(date);  // updates the selected date
-//               loadCalendarData(date); // fetches new events for the selected month
-//             }}
-//             eventPropGetter={eventStyleGetter} 
-//             popup={true}
-//             showMultiDayTimes={true}
-//             onShowMore={(events, date) => {
-//               console.log(`Navigating to day view for ${date}`);
-//               setSelectedView("day");  // switches to "day" view
-//               setCurrentDate(date);     // updates the selected date
-//             }}
-//             view={selectedView}  // controls whether it's "month" or "day" view
-//             date={currentDate}   // ensures calendar updates to the correct date
-//             onView={(view) => setSelectedView(view)} // Tracks the active view
-//             components={{
-//               event: (props) => props.event ? (<CalendarEvent
-//                 {...props}
-//                 onRightClick={handleRightClick}
-//                 isActive={menuEventId === props.event.id}
-//                 menuPosition={menuPosition}
-//                 onClose={handleCloseMenu}
-//                 />) : null
-//             }}
-//         />
-//     </div>
-// );
 return (
   <div className="Calendar">
       <div className="advisor-info">

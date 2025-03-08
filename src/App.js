@@ -155,9 +155,6 @@ async function fetchRecordsFromReport(formName, fromDate, toDate) {
     }
 
 
-    //IDS: 4200337000001161005 for all_tasks_reminders
-    //IDS: 4200337000001094383 for ?
-
     let requestData;
 
     if (formName === "All_Payment_Reminders") {

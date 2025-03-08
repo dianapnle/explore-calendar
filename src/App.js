@@ -337,28 +337,13 @@ async function fetchAllReportsData(fromDate, toDate) {
                       ? `[Status: ${record.Status}]` 
                       : "";
 
-                    //   if (report === "All_Reservation_Important_Dates") {
-                    //     console.log("🔍 Checking Reservation & Date_Type:", record);
-                    //     title = record.Reservation && record.Date_Type 
-                    //         ? `Reservation ID: ${record.Reservation.ID} ${record.Date_Type}`
-                    //         : "No Title (Missing Data)";
-                    // }
-
 
                     let customerName = record.Customer || "Unknown Customer";
 
                     // "All_Customer_Loyalty_Programs" and "All_Customer_Passport_Information"
                     let title = record.Reservation_Title || record.Title || null;
 
-                  //   if (originalReport === "All_Payment_Reminders") {
-                  //     console.log("🔍 Checking All_Payment_Reminders Record:", record);
-                      
-                  //     if (record["Reminder_Title"]) {
-                  //         title = record["Reminder_Title"];
-                  //     } else {
-                  //         console.warn(`⚠️ Reminder_Title is missing for record ID: ${record.ID}`);
-                  //     }
-                  // }
+
                   
                     if (!title) {
 

@@ -5,7 +5,7 @@ Apply Helvetica to everything
   
   /* Increase padding on day headers */
   .rbc-header {
-    padding: 10px 0; /* Adjust as needed */
+    padding: 10px 0; 
     font-weight: bold;
     text-align: center;
   }
@@ -13,6 +13,7 @@ Apply Helvetica to everything
   /* Remove grey shading from out-of-month days */
   .rbc-off-range-bg {
     background: none !important; /* Removes background shading */
+    max-height: 100px;
   }
   
   /* Keep grey shading for the date number only */
@@ -23,4 +24,40 @@ Apply Helvetica to everything
 .rbc-toolbar-label {
     font-weight: bold;
     padding: 10px 0;
+}
+
+.rbc-event {
+  z-index: 1 !important;
+  position: relative;
+  height: 20px !important;  /* Forces smaller events */
+  font-size: 16px;
+  overflow: hidden;
+  min-height: 28px;
+  margin-bottom: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rbc-month-row {
+  height: 160px !important; /* Limits how much each row can grow */
+}
+
+.rbc-show-more {
+  font-size: 14px !important; 
+  cursor: pointer;
+}
+
+.rbc-day-slot .rbc-event {
+  max-height: 30px !important; 
+  margin-bottom: 5px
+}
+
+
+.advisor-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: 100px;  
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
 }

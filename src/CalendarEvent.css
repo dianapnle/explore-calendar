@@ -1,17 +1,51 @@
+/* Event box styling */
 .calendar-event {
-    pointer-events: auto !important; 
-    user-select: none; 
-    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 3px;
+    border-radius: 3px;
+    position: relative !important;
+    z-index: 1 !important; /* Lower priority */
+    pointer-events: auto !important;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
 }
 
-
+/* Right-click context menu */
 .context-menu {
-    position: fixed !important;
-    z-index: 99999 !important; /* Ensure it appears on top */
-    display: block !important; /* Force it to show */
+    position: fixed;
     background-color: white;
     border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999999 !important;
+    display: none;
+    opacity: 1
+}
+
+/* Show menu when active */
+.context-menu.show {
+    display: block !important;
+}
+
+/* Button inside context menu */
+.context-menu button {
+    background: #e00000;
+    color: white;
+    border: none;
     padding: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    font-weight: normal;
+    cursor: pointer;
+    width: 100%;
+    z-index: 100001;
+}
+
+.context-menu button:hover {
+    background: #8a0113;
 }
